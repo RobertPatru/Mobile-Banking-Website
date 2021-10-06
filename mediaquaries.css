@@ -1,0 +1,277 @@
+@media (min-width: 1600px) {
+    /* * {
+        display: none;
+    }  */
+
+    #section-a {
+        background-position: 1000px -100px;
+    }
+    #section-a::before {
+        background-position: 1100px -100px;
+    }
+} 
+
+@media (max-height: 850px) and (max-width: 850px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        width: 100vw;
+    }
+
+    .request-invite {
+        text-align: center;
+    }
+
+    /* Header */
+
+    #header .container {
+        height: 100%;
+        margin-top: 30px;
+    }
+
+    /* Sectiunea home, about, blog, careers */
+    #header ul:nth-child(2) {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .header-btn::after {
+        bottom: 25px;
+    }
+
+    .list-style {
+        flex-direction: column;
+        margin-bottom: 30px;
+        /* height: 500px; */
+    }
+
+    .list-style ul li {
+        height: 50px;
+    }
+
+    /* Creating more space between "carrers" and "Request invite" buttons */
+    .list-style ul li:nth-child(5) {
+        margin-bottom: 10px;
+    }
+
+    /* <!-- Section A: Next generation digital banking --> */
+    #section-a {
+        background-position: 0px -100px;
+        background-size: 300px;
+        /* HERESSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
+        height: 1200px;
+        margin-bottom: 100px;
+        width: 100%;
+    }
+
+    #section-a::before {
+        background-position: 20px -50px;
+        background-size: 400px;
+        width: 100%;
+    }
+
+    .wrap-section-a {
+        flex-direction: column;
+        /* height: 500px; */
+    }
+
+    .wrap-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .wrap-text h1 {
+        font-size: 30px;
+        margin-top: 200px;
+    }
+
+    .placeholder {
+        display: none;
+    }
+
+    /* <!-- Section A: Next generation digital banking --> */
+    #section-b {
+        text-align: center;
+        height: 100%;
+    }
+
+    #section-b .container h1 {
+        font-size: 30px;
+    }
+
+    #section-b .container .p-style {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    /* <!-- Section C: Latest Articles --> */
+    #section-c h1 {
+        text-align: center;
+    }
+
+    .info-container {
+        flex-direction: column;
+    }
+
+    .info {
+        margin: auto;
+        padding-top: 20px;
+        border-top: 2px lightslategrey solid;
+    }
+
+   
+    .article-container {
+        flex-direction: column;
+        /* text-align: center; */
+    }
+
+    .article {
+        margin: auto;
+        margin-top: 50px;
+    }
+
+    .article:nth-child(4) {
+        margin-bottom: 50px;
+    }
+
+    /* <!-- Section D: Footer --> */
+    .footer-container {
+        height: 100%;
+        flex-direction: column;
+        
+        
+    }
+
+    .sub-div-1,
+    .sub-div-2,
+    .sub-div-3,
+    .sub-div-4 {
+        margin: 0%;
+    }
+
+    .sub-div-3 {
+        margin-bottom: 30px;
+    }
+
+    .sub-div-4 h3 {
+        margin-bottom: 20px;
+    }
+
+    .sub-div-1 div {
+        margin-bottom: 30px;
+    }
+
+    .div-1 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+}
+
+@media (max-height: 420px) and (max-width: 850px) {
+    #header .container {
+        padding: 0 30px;
+        height: 100%;
+    }
+
+    
+    
+    .list-style {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #header ul:nth-child(2) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* <!-- Section A: Next generation digital banking --> */
+    #section-a {
+        background-position: center -100px;
+        background-size: 300px;
+    }
+
+    #section-a::before {
+        background-position: center -50px;
+        background-size: 400px;
+    }
+
+    /* <!-- Section A: Next generation digital banking --> */
+    .info-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* <!-- Section C: Latest Articles --> */
+    .article-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* <!-- Section D: Footer --> */
+    .footer-container {
+        height: 100%;
+        flex-direction: row;
+        
+        
+    }
+
+    .div-1 {
+        flex-direction: row;
+    }
+
+    .header-btn :nth-child(5) {
+        margin: 0%;
+    }
+
+    #header ul:nth-child(2) li:nth-child(5) {
+        margin: 0%;
+    }
+
+    .sub-div-1 div a:nth-child(3) {
+        display: none;
+    }
+
+    .sub-div-3 {
+        margin-bottom: 0%;
+    }
+
+    .sub-div-4 h3 {
+        margin-bottom: 0;
+    }
+
+    .footer-container {
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 800px) and (max-height: 400px) {
+    .header-btn {
+        font-size: 12px;
+    }
+
+    .list-style img {
+        width: 100px;
+    }
+
+    .request-invite:nth-child(1) {
+        font-size: 12px;
+        padding: 5px 5px;
+    }
+
+    #header ul:nth-child(2) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
